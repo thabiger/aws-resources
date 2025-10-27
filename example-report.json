@@ -1,0 +1,541 @@
+{
+  "period": {
+    "start": "2025-10-01",
+    "end": "2025-10-31"
+  },
+  "services": [
+    {
+      "name": "Amazon CloudFront",
+      "cost": 0.05,
+      "supported": true,
+      "detail": {
+        "summary": {
+          "total_distributions": 3,
+          "enabled": 1,
+          "disabled": 2
+        }
+      }
+    },
+    {
+      "name": "Amazon DocumentDB (with MongoDB compatibility)",
+      "cost": 420.12,
+      "supported": true,
+      "detail": {
+        "summary": {
+          "total_clusters": 2,
+          "total_nodes": 5,
+          "by_instance_class": {
+            "db.t3.micro": 3,
+            "db.t3.small": 4,
+            "db.t3.medium": 4,
+            "db.m5.xlarge": 1,
+            "db.m6g.2xlarge": 1,
+            "db.r5.xlarge": 1,
+            "db.t3.xlarge": 1,
+            "db.r5.large": 1
+          },
+          "total_vCPU": 44,
+          "total_memory_mib": 142336,
+          "by_instance_type": {
+            "t3.micro": {
+              "count": 3,
+              "vCPU_each": 2,
+              "memory_mib_each": 1024,
+              "vCPU_total": 6,
+              "memory_mib_total": 3072
+            },
+            "t3.small": {
+              "count": 4,
+              "vCPU_each": 2,
+              "memory_mib_each": 2048,
+              "vCPU_total": 8,
+              "memory_mib_total": 8192
+            },
+            "t3.medium": {
+              "count": 4,
+              "vCPU_each": 2,
+              "memory_mib_each": 4096,
+              "vCPU_total": 8,
+              "memory_mib_total": 16384
+            },
+            "m5.xlarge": {
+              "count": 1,
+              "vCPU_each": 4,
+              "memory_mib_each": 16384,
+              "vCPU_total": 4,
+              "memory_mib_total": 16384
+            },
+            "m6g.2xlarge": {
+              "count": 1,
+              "vCPU_each": 8,
+              "memory_mib_each": 32768,
+              "vCPU_total": 8,
+              "memory_mib_total": 32768
+            },
+            "r5.xlarge": {
+              "count": 1,
+              "vCPU_each": 4,
+              "memory_mib_each": 32768,
+              "vCPU_total": 4,
+              "memory_mib_total": 32768
+            },
+            "t3.xlarge": {
+              "count": 1,
+              "vCPU_each": 4,
+              "memory_mib_each": 16384,
+              "vCPU_total": 4,
+              "memory_mib_total": 16384
+            },
+            "r5.large": {
+              "count": 1,
+              "vCPU_each": 2,
+              "memory_mib_each": 16384,
+              "vCPU_total": 2,
+              "memory_mib_total": 16384
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Amazon DynamoDB",
+      "cost": 0.02,
+      "supported": true,
+      "detail": {
+        "summary": {
+          "total_tables": 12,
+          "by_billing_mode": {
+            "unknown": 12
+          }
+        }
+      }
+    },
+    {
+      "name": "Amazon EC2 Container Registry (ECR)",
+      "cost": 150.0,
+      "supported": true,
+      "detail": {
+        "summary": {
+          "total_repositories": 120
+        }
+      }
+    },
+    {
+      "name": "Amazon Elastic Compute Cloud - Compute",
+      "cost": 4200.5,
+      "supported": true,
+      "detail": {
+        "summary": {
+          "total_instances": 160,
+          "total_vCPU": 480,
+          "total_memory_mib": 1800000,
+          "total_spot": 40,
+          "total_on_demand": 120,
+          "spot": {
+            "vCPU": 140,
+            "memory_mib": 520000
+          },
+          "ondemand": {
+            "vCPU": 340,
+            "memory_mib": 1280000
+          },
+          "architecture": {
+            "x86": {
+              "count": 70,
+              "vCPU": 200,
+              "memory_mib": 800000
+            },
+            "arm": {
+              "count": 90,
+              "vCPU": 280,
+              "memory_mib": 1000000
+            }
+          },
+          "lifecycle_by_architecture": {
+            "x86": {
+              "spot_count": 20,
+              "on_demand_count": 50,
+              "spot_vCPU": 80,
+              "spot_memory_mib": 320000,
+              "on_demand_vCPU": 120,
+              "on_demand_memory_mib": 480000
+            },
+            "arm": {
+              "spot_count": 20,
+              "on_demand_count": 70,
+              "spot_vCPU": 60,
+              "spot_memory_mib": 200000,
+              "on_demand_vCPU": 220,
+              "on_demand_memory_mib": 800000
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Amazon Elastic Container Service",
+      "cost": 0.0,
+      "supported": true,
+      "detail": {
+        "summary": {
+          "total_clusters": 8
+        }
+      }
+    },
+    {
+      "name": "Amazon Elastic Container Service for Kubernetes",
+      "cost": 90.5,
+      "supported": true,
+      "detail": {
+        "summary": {
+          "total_clusters": 2
+        }
+      }
+    },
+    {
+      "name": "Amazon Elastic File System",
+      "cost": 70.12,
+      "supported": true,
+      "detail": {
+        "summary": {
+          "total_file_systems": 15,
+          "by_throughput_mode": {
+            "bursting": {
+              "count": 15,
+              "total_size_bytes": 200000000000
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Amazon Elastic Load Balancing",
+      "cost": 300.1,
+      "supported": true,
+      "detail": {
+        "summary": {
+          "classic": 0,
+          "alb_nlb": 6,
+          "total": 6
+        }
+      }
+    },
+    {
+      "name": "Amazon ElastiCache",
+      "cost": 900.25,
+      "supported": true,
+      "detail": {
+        "summary": {
+          "total_clusters": 80,
+          "by_engine": {
+            "redis": 60,
+            "valkey": 20
+          },
+          "total_nodes": 80,
+          "total_vCPU": 160,
+          "total_memory_mib": 294912,
+          "by_instance_type": {
+            "t3.micro": {
+              "count": 40,
+              "vCPU_each": 2,
+              "memory_mib_each": 1024,
+              "vCPU_total": 80,
+              "memory_mib_total": 40960
+            },
+            "t3.small": {
+              "count": 20,
+              "vCPU_each": 2,
+              "memory_mib_each": 2048,
+              "vCPU_total": 40,
+              "memory_mib_total": 40960
+            },
+            "r5.large": {
+              "count": 10,
+              "vCPU_each": 2,
+              "memory_mib_each": 16384,
+              "vCPU_total": 20,
+              "memory_mib_total": 163840
+            },
+            "t3.medium": {
+              "count": 8,
+              "vCPU_each": 2,
+              "memory_mib_each": 4096,
+              "vCPU_total": 16,
+              "memory_mib_total": 32768
+            },
+            "m5.large": {
+              "count": 2,
+              "vCPU_each": 2,
+              "memory_mib_each": 8192,
+              "vCPU_total": 4,
+              "memory_mib_total": 16384
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Amazon Glacier",
+      "cost": 5.0,
+      "supported": false,
+      "note": "In-depth analysis not supported yet"
+    },
+    {
+      "name": "Amazon Location Service",
+      "cost": 0.0001,
+      "supported": false,
+      "note": "In-depth analysis not supported yet"
+    },
+    {
+      "name": "Amazon OpenSearch Service",
+      "cost": 120.5,
+      "supported": true,
+      "detail": {
+        "summary": {
+          "total_domains": 4,
+          "total_nodes": 6,
+          "total_vCPU": 12,
+          "total_memory_mib": 20000,
+          "by_instance_type": {
+            "t3.small": {
+              "count": 2,
+              "vCPU_each": 2,
+              "memory_mib_each": 2048,
+              "vCPU_total": 4,
+              "memory_mib_total": 4096
+            },
+            "t3.medium": {
+              "count": 4,
+              "vCPU_each": 2,
+              "memory_mib_each": 4096,
+              "vCPU_total": 8,
+              "memory_mib_total": 16384
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Amazon Relational Database Service",
+      "cost": 950.75,
+      "supported": true,
+      "detail": {
+        "summary": {
+          "total_instances": 10,
+          "total_allocated_storage_gib": 4000,
+          "total_vCPU": 30,
+          "total_memory_mib": 100000,
+          "by_engine": {
+            "mysql": 4,
+            "postgres": 4,
+            "docdb": 2
+          },
+          "by_class": {
+            "db.t4g.micro": 2,
+            "db.t4g.small": 3,
+            "db.t4g.medium": 2,
+            "db.m8g.xlarge": 1,
+            "db.m6g.2xlarge": 1,
+            "db.r8g.xlarge": 1,
+            "db.t4g.xlarge": 0,
+            "db.r5.large": 0,
+            "db.t3.medium": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "Amazon Route 53",
+      "cost": 12.34,
+      "supported": true,
+      "detail": {
+        "summary": {
+          "total_hosted_zones": 10,
+          "by_type": {
+            "public": 7,
+            "private": 3
+          }
+        }
+      }
+    },
+    {
+      "name": "Amazon Simple Email Service",
+      "cost": 8.5,
+      "supported": true,
+      "detail": {
+        "summary": {
+          "total_identities": 6
+        }
+      }
+    },
+    {
+      "name": "Amazon Simple Notification Service",
+      "cost": 2.1,
+      "supported": true,
+      "detail": {
+        "summary": {
+          "total_topics": 6
+        }
+      }
+    },
+    {
+      "name": "Amazon Simple Queue Service",
+      "cost": 1.5,
+      "supported": true,
+      "detail": {
+        "summary": {
+          "total_queues": 10
+        }
+      }
+    },
+    {
+      "name": "Amazon Simple Storage Service",
+      "cost": 420.0,
+      "supported": true,
+      "detail": {
+        "summary": {
+          "total_buckets": 60
+        }
+      }
+    },
+    {
+      "name": "Amazon Virtual Private Cloud",
+      "cost": 120.0,
+      "supported": true,
+      "detail": {
+        "summary": {
+          "total_vpcs": 3,
+          "total_subnets": 100,
+          "total_nat_gateways": 2,
+          "total_internet_gateways": 3,
+          "total_route_tables": 30,
+          "total_vpc_endpoints": 5,
+          "total_security_groups": 400
+        }
+      }
+    },
+    {
+      "name": "AmazonCloudWatch",
+      "cost": 45.0,
+      "supported": false,
+      "note": "In-depth analysis not supported yet"
+    },
+    {
+      "name": "AWS Backup",
+      "cost": 0.2,
+      "supported": false,
+      "note": "In-depth analysis not supported yet"
+    },
+    {
+      "name": "AWS CloudTrail",
+      "cost": 0.0,
+      "supported": false,
+      "note": "In-depth analysis not supported yet"
+    },
+    {
+      "name": "AWS Cost Explorer",
+      "cost": 0.01,
+      "supported": false,
+      "note": "In-depth analysis not supported yet"
+    },
+    {
+      "name": "AWS Direct Connect",
+      "cost": 15.0,
+      "supported": true,
+      "detail": {
+        "summary": {
+          "total_connections": 1
+        }
+      }
+    },
+    {
+      "name": "AWS Glue",
+      "cost": 0.0,
+      "supported": false,
+      "note": "In-depth analysis not supported yet"
+    },
+    {
+      "name": "AWS Key Management Service",
+      "cost": 5.0,
+      "supported": true,
+      "detail": {
+        "summary": {
+          "total_keys": 12
+        }
+      }
+    },
+    {
+      "name": "AWS Lambda",
+      "cost": 25.0,
+      "supported": true,
+      "detail": {
+        "summary": {
+          "total_functions": 12,
+          "total_memory_mb": 1600,
+          "by_runtime": {
+            "python3.11": 2,
+            "nodejs18.x": 4,
+            "nodejs16.x": 1,
+            "python3.10": 2,
+            "go1.x": 1,
+            "java11": 2
+          },
+          "by_memory_mb": {
+            "128": 8,
+            "256": 4
+          }
+        }
+      }
+    },
+    {
+      "name": "AWS Secrets Manager",
+      "cost": 0.0001,
+      "supported": false,
+      "note": "In-depth analysis not supported yet"
+    },
+    {
+      "name": "AWS Support (Business)",
+      "cost": 200.0,
+      "supported": false,
+      "note": "In-depth analysis not supported yet"
+    },
+    {
+      "name": "AWS Systems Manager",
+      "cost": 0.0001,
+      "supported": false,
+      "note": "In-depth analysis not supported yet"
+    },
+    {
+      "name": "AWS X-Ray",
+      "cost": 0.0,
+      "supported": false,
+      "note": "In-depth analysis not supported yet"
+    },
+    {
+      "name": "CloudWatch Events",
+      "cost": 0.00002,
+      "supported": false,
+      "note": "In-depth analysis not supported yet"
+    },
+    {
+      "name": "EC2 - Other",
+      "cost": 1100.0,
+      "supported": true,
+      "detail": {
+        "summary": {
+          "total_volumes": 120,
+          "total_snapshots": 3000,
+          "total_volume_gib": 800
+        },
+        "volumes": [],
+        "snapshots": []
+      }
+    },
+    {
+      "name": "Savings Plans for AWS Compute usage",
+      "cost": 300.0,
+      "supported": false,
+      "note": "In-depth analysis not supported yet"
+    }
+  ]
+}

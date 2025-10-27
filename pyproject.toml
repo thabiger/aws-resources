@@ -1,0 +1,15 @@
+[project]
+name = "aws-resources"
+version = "0.1.0"
+authors = [
+    { name = "Tomasz Habiger", email = "tomasz.habiger@gmail.com" },
+]
+description = "AWS Resource discovery and inventory"
+requires-python = ">=3.9"
+dependencies = [
+    "boto3>=1.28.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
